@@ -326,13 +326,6 @@ export default function Home() {
   
   <div className="relative flex-1 flex justify-center items-center mb-10 md:mb-0">
     
-    <img
-      src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F1.png&w=1080&q=75"
-      alt="Food 1"
-      className="absolute top-0 left-10 w-32 h-32 rounded-full object-cover"
-    />
-
-    
     <div className="relative">
       <img
         src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F15.png&w=1080&q=75"
