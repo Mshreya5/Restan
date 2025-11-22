@@ -179,7 +179,7 @@ export default function MenuPage() {
           <h2 className="text-3xl font-bold">Our Customers Feedback</h2>
           <p className="text-yellow-600 text-xl">★★★★★</p>
           <h3 className="text-2xl font-semibold">Really good food, fair prices</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">
+          <p className="text-gray-600 text-sm">
             “Been coming here for years and they never disappoint. The staff knows what they are
             doing and the food is consistently good. Its become our go-to place for family dinners.”
           </p>
@@ -190,7 +190,7 @@ export default function MenuPage() {
       <div className="bg-neutral-900 text-white py-20 px-10 flex flex-col md:flex-row justify-between gap-10">
         <div className="md:w-1/2 space-y-6">
           <h2 className="text-4xl font-bold">Reserve Your Favorite Table</h2>
-          <p className="text-gray-400 leading-relaxed">
+          <p className="text-gray-400">
             A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails.
             The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s,
             giving you an unforgettable experience.

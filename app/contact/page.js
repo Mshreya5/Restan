@@ -15,7 +15,7 @@ export default function ContactPage() {
         
         <img
           src="https://www.shutterstock.com/image-photo/japanese-seafood-sushi-on-black-260nw-412326955.jpg"
-          alt="Contact Banner"
+          alt="Contact"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
 
@@ -113,7 +113,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      
       <OpeningHours />
       <Footer />
     </div>

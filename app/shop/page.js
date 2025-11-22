@@ -36,7 +36,7 @@ export default function Shop() {
     <div>
       <Header />
 
-      <header className="relative text-white text-center py-[150px] px-5 bg-gray-900 dark:bg-black overflow-hidden">
+      <header className="relative text-white text-center py-[150px] px-5 bg-gray-900 dark:bg-black">
         <img
           src="https://www.shutterstock.com/image-photo/japanese-seafood-sushi-on-black-260nw-412326955.jpg"
           alt="Colorful spices and ingredients background"
@@ -77,13 +77,13 @@ export default function Shop() {
             <div key={item.id} className="border-2 border-gray-300 dark:border-white rounded-lg p-5 w-[200px] bg-white dark:bg-black shadow-lg dark:shadow-none">
               <img
                 src={item.img}
-                alt={`Delicious ${item.title} - ${item.name}`}
+                alt={item}
                 className="w-full h-[150px] object-cover rounded"
               />
               <p className="text-gray-900 dark:text-white text-center mt-3 hover:text-yellow-600">{item.name}</p>
               <h3 className="text-gray-900 dark:text-white font-semibold text-lg hover:text-yellow-600">{item.title}</h3>
               <p className="text-gray-900 dark:text-white hover:text-yellow-600 font-bold">{item.price}</p>
-              <button className="w-full mt-3 px-6 py-3 border-2 border-gray-300 dark:border-white text-gray-900 dark:text-white rounded-full bg-transparent hover:bg-yellow-800 hover:text-white hover:border-yellow-800 transition-all duration-300">
+              <button className="w-full mt-3 px-6 py-3 border-2 border-gray-300 dark:border-white text-gray-900 dark:text-white rounded-full bg-transparent hover:bg-yellow-800 hover:text-white hover:border-yellow-800">
                 Add to Cart
               </button>
             </div>
@@ -97,16 +97,16 @@ export default function Shop() {
             🚫
           </button>
 
-          <button className="w-10 h-10 border border-gray-300 rounded-full bg-yellow-700 text-white font-bold hover:bg-yellow-800 transition">
+          <button className="w-10 h-10 border border-gray-300 rounded-full bg-yellow-700 text-white font-bold">
             1
           </button>
-          <button className="w-10 h-10 border border-gray-300 dark:border-gray-600 rounded-full bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-bold hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+          <button className="w-10 h-10 border border-gray-300 dark:border-gray-600 rounded-full bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-bold hover:bg-gray-100 ">
             2
           </button>
-          <button className="w-10 h-10 border border-gray-300 dark:border-gray-600 rounded-full bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-bold hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+          <button className="w-10 h-10 border border-gray-300 dark:border-gray-600 rounded-full bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-bold hover:bg-gray-100 ">
             3
           </button>
-          <button className="w-10 h-10 border border-gray-300 dark:border-gray-600 rounded-full bg-white dark:bg-gray-800 text-gray-900 dark:text-white flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+          <button className="w-10 h-10 border border-gray-300 dark:border-gray-600 rounded-full bg-white dark:bg-gray-800 text-gray-900 dark:text-white flex items-center justify-center hover:bg-gray-100">
             »
           </button>
           </div>
