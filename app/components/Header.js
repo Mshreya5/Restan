@@ -64,7 +64,6 @@ export default function Header() {
         
           <div 
             className="relative w-11 h-11 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black text-lg cursor-pointer hover:bg-[#a57b46]"
-            aria-label="Shopping cart with 0 items"
           >
             🛒
             <div className="absolute top-0 right-0 bg-[#b88a58] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
@@ -75,7 +74,6 @@ export default function Header() {
         
           <div 
             className="hidden md:block bg-[#b88a58] text-white font-bold px-6 py-2 rounded-full cursor-pointer hover:bg-[#9a6f45]"
-            aria-label="Make a reservation"
           >
             Reservation
           </div>

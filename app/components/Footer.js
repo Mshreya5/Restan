@@ -23,30 +23,23 @@ export default function Footer() {
            
             <div className="flex space-x-3">
               <button 
-                className="bg-gray-700 hover:bg-yellow-600 px-3 py-1 rounded-full transition-colors"
-                aria-label="Visit our Facebook page"
-                title="Facebook"
+                className="bg-gray-700 hover:bg-yellow-600 px-3 py-1 rounded-full "
               >
                 F
               </button>
               <button 
-                className="bg-gray-700 hover:bg-yellow-600 px-3 py-1 rounded-full transition-colors"
-                aria-label="Follow us on Twitter"
-                title="Twitter"
+                className="bg-gray-700 hover:bg-yellow-600 px-3 py-1 rounded-full "
+  
               >
                 T
               </button>
               <button 
-                className="bg-gray-700 hover:bg-yellow-600 px-3 py-1 rounded-full transition-colors"
-                aria-label="Subscribe to our YouTube channel"
-                title="YouTube"
+                className="bg-gray-700 hover:bg-yellow-600 px-3 py-1 rounded-full "
               >
                 Y
               </button>
               <button 
-                className="bg-gray-700 hover:bg-yellow-600 px-3 py-1 rounded-full transition-colors"
-                aria-label="Connect on LinkedIn"
-                title="LinkedIn"
+                className="bg-gray-700 hover:bg-yellow-600 px-3 py-1 rounded-full "
               >
                 L
               </button>
