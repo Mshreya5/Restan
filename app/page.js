@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import Footer from "./components/Footer";
 import OpeningHours from "./components/OpeningHours";
+import Chefs from "./components/Chefs";
 
 export default function Home() {
   const navigate = useRouter();
@@ -9,48 +10,65 @@ export default function Home() {
  
   const foodCategories = ["Main Dishes", "Desserts", "Sea Food", "Beverage"];
   
- 
   const dishes = [
     {
-      name: "Mom's Fried Chicken",
-      desc: "Crispy chicken the way grandma made it",
-      price: "$14.99",
-      img: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F1.jpg&w=1920&q=75"
+      name: "Braised Chicken Legs",
+      desc: "4 Chicken Legs • Chili Sauce • Soft Drinks",
+      price: "$34",
+      originalPrice: "$35",
+      rating: 4.9,
+      reviews: "5.7K",
+      img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=500&fit=crop"
     },
     {
-      name: "Garden Salad",
-      desc: "Mixed greens with whatever's fresh today",
-      price: "$8.50",
-      img: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F2.jpg&w=1920&q=75"
+      name: "Bone Steak",
+      desc: "4 Chicken Legs • Chili Sauce • Soft Drinks",
+      price: "$18",
+      originalPrice: "$25",
+      rating: 4.2,
+      reviews: "3.1K",
+      img: "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=500&h=500&fit=crop"
     },
     {
-      name: "Stack of Pancakes",
-      desc: "Three fluffy pancakes with real maple syrup",
-      price: "$7.25",
+      name: "Fish Tacos with Chipotle Crema",
+      desc: "4 Chicken Legs • Chili Sauce • Soft Drinks",
+      price: "$12",
+      originalPrice: "$18",
+      rating: 4.8,
+      reviews: "6.7K",
       img: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F3.jpg&w=1920&q=75"
     },
     {
-      name: "Tony's Special Steak",
-      desc: "8oz sirloin cooked how you like it",
-      price: "$19.99",
-      img: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F4.jpg&w=1920&q=75"
+      name: "Grilled Salmon",
+      desc: "Fresh salmon with lemon butter sauce",
+      price: "$28",
+      originalPrice: "$35",
+      rating: 4.7,
+      reviews: "4.2K",
+      img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=500&fit=crop"
     },
     {
-      name: "Homemade Chocolate Cake",
-      desc: "Made fresh this morning by our baker",
-      price: "$6.50",
-      img: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F5.jpg&w=1920&q=75"
+      name: "Pasta Carbonara",
+      desc: "Classic Italian pasta with creamy sauce",
+      price: "$16",
+      originalPrice: "$22",
+      rating: 4.6,
+      reviews: "3.8K",
+      img: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&h=500&fit=crop"
     },
     {
-      name: "Fresh Coffee",
-      desc: "Local roast, bottomless cup",
-      price: "$2.75",
-      img: "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F6.jpg&w=1920&q=75"
+      name: "Chocolate Dessert",
+      desc: "Rich chocolate cake with vanilla cream",
+      price: "$8",
+      originalPrice: "$12",
+      rating: 4.9,
+      reviews: "7.1K",
+      img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=500&fit=crop"
     }
   ];
 
   return (
-    <div className="w-full min-h-screen bg-black dark:bg-black text-white dark:text-gray-100">
+    <div className="w-full min-h-screen bg-white dark:bg-black text-white dark:text-gray-100">
    
       <header
         className="relative h-auto bg-cover bg-center bg-gray-800"
@@ -74,46 +92,74 @@ export default function Home() {
       
         <nav className="relative z-10 flex justify-between items-center px-4 sm:px-10 py-5 text-white">
         
-          <div className="hidden lg:flex gap-6 xl:gap-10 text-base lg:text-lg">
-            <div
-              className="relative group cursor-pointer"
-              onClick={() => navigate.push("/")}
-            >
-              Home▾
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <div className="py-2">
-                  {["Home Page 1", "Home Page 2", "Home Page 3", "Home Page 4"].map((page, i) => (
-                    <div key={i} className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer">{page}</div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
+          <div className="hidden lg:flex gap-30 xl:gap-20 text-base lg:text-lg">
             <div className="relative group cursor-pointer">
-              Pages▾
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <div className="py-2">
-                  {["About Us", "Chef", "Chef Details", "Reservation", "Contact Us", "Register", "Login", "Error Page", "Dark Version"].map((page, i) => (
-                    <div key={i} className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer">{page}</div>
-                  ))}
-                </div>
-              </div>
-            </div>
+  Home▾
+  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+    <div className="py-2">
 
-            <div
-              className="relative group cursor-pointer"
-              onClick={() => navigate.push("/menu")}
-            >
-              Menu▾
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <div className="py-2">
-                  {["Menu Style One", "Menu Style Two", "Menu Style Three", "Dark Version"].map((menu, i) => (
-                    <div key={i} className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer">{menu}</div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+      <div
+        onClick={() => navigate.push("/")}
+        className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer"
+      >
+        Home Page 1
+      </div>
+
+      <div
+        onClick={() => navigate.push("/")}
+        className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer"
+      >
+        Home Page 2
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <div className="relative group cursor-pointer">
+  Pages▾
+  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible ">
+    <div className="py-2">
+
+      <div onClick={() => navigate.push("/about")} className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer">
+        About Us
+      </div>
+
+      <div onClick={() => navigate.push("/chef")} className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer">
+        Chef
+      </div>
+
+      <div onClick={() => navigate.push("/contact")} className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer">
+        Contact Us
+      </div>
+
+    
+    </div>
+  </div>
+</div>
+ <div className="relative group cursor-pointer">
+  Menu▾
+
+  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible ">
+    <div className="py-2">
+
+      <div
+        onClick={() => navigate.push("/menu")}
+        className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer"
+      >
+        Menu Style One
+      </div>
+
+      <div
+        onClick={() => navigate.push("/menu")}
+        className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer"
+      >
+        Dark Version
+      </div>
+
+    </div>
+  </div>
+</div>
 
           <div className="text-2xl font-bold flex items-center gap-2">
             <img
@@ -124,33 +170,57 @@ export default function Home() {
           </div>
 
           
-          <div className="hidden lg:flex gap-6 xl:gap-10 text-base lg:text-lg items-center">
-            <div className="relative group cursor-pointer" onClick={() => navigate.push("/blog")}>
-              Blog▾
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <div className="py-2">
-                  {["Blog standard", "Blog With Side-Bar", "Blog Grid Two column", "Blog Grid Three column", "Blog single", "Blog single with side bar", "Dark Version"].map((blog, i) => (
-                    <div key={i} className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer">{blog}</div>
-                  ))}
-                </div>
-              </div>
-            </div>
+          <div className="relative group cursor-pointer">
+  Blog▾
+  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible ">
+    <div className="py-2">
 
-            <div className="relative group cursor-pointer" onClick={() => navigate.push("/shop")}>
-              Shop▾
-              <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <div className="py-2">
-                  {["Shop", "Shop single", "Shop single two", "Cart", "Checkout", "Dark Version"].map((item, i) => (
-                    <div key={i} className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer">{item}</div>
-                  ))}
-                </div>
-              </div>
-            </div>
+      <div
+        onClick={() => navigate.push("/blog")}
+        className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer"
+      >
+        Blog Standard
+      </div>
+      <div
+        onClick={() => navigate.push("/blog")}
+        className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer"
+      >
+        Dark Version
+      </div>
 
-            <div className="relative group cursor-pointer" onClick={() => navigate.push("/contact")}>
-              Contact Us▾
+    </div>
+  </div>
+</div>
 
-            </div>
+
+           <div className="relative group cursor-pointer">
+  Shop▾
+  <div className="absolute top-full left-0 mt-2 w-52 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible ">
+    <div className="py-2">
+
+      <div
+        onClick={() => navigate.push("/shop")}
+        className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer"
+      >
+        Shop
+      </div>
+
+      <div
+        onClick={() => navigate.push("/shop")}
+        className="px-4 py-2 bg-white hover:bg-gray-200 text-black cursor-pointer"
+      >
+        Dark Version
+      </div>
+
+    </div>
+  </div>
+</div>
+            <div 
+  className="cursor-pointer"
+  onClick={() => navigate.push("/contact")}
+>
+  Contact Us
+</div>
           </div>
         </nav>
       </header>
@@ -164,7 +234,7 @@ export default function Home() {
       >
         <div className="bg-black/50 absolute inset-0"></div>
         <div className="relative z-10">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold mb-8">Best Restaurant</h1>
+          <h1 className="heading text-4xl sm:text-6xl md:text-7xl font-bold mb-8">Best Restaurant</h1>
           <div className="flex justify-center">
             <div className="w-32 h-32 sm:w-40 sm:h-40 border-4 border-yellow-300 rounded-full flex items-center justify-center text-white font-semibold text-sm sm:text-base tracking-wider">
               BEST FOOD SINCE 1865
@@ -175,10 +245,10 @@ export default function Home() {
 
 
      
-<div className="relative flex flex-col md:flex-row justify-center items-start bg-black py-20 px-10 md:px-20">
+<div className="relative flex flex-col md:flex-row justify-center items-start bg-white dark:bg-black text-black dark:text-white py-20 px-10 md:px-20">
 
 
-  <div className="absolute -top-32 left-10 md:left-20 z-20 w-full md:w-[350px] bg-neutral-800 p-8 rounded-2xl shadow-2xl">
+  <div className="absolute -top-32 z-20 w-full md:w-[350px] left-1/2 -translate-x-1/2 md:left-20 md:-translate-x-0 bg-white dark:bg-neutral-800 p-8 rounded-2xl shadow-2xl">
     <div className="absolute -top-6 left-6 z-30">
       <div className="bg-yellow-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-3xl">
         🍴
@@ -190,9 +260,9 @@ export default function Home() {
       <input
         type="text"
         placeholder="Phone"
-        className="p-3 rounded-md bg-neutral-950 text-white outline-none"
+        className="p-3 rounded-md bg-blue-50 dark:bg-neutral-950 text-gray-700 "
       />
-      <select className="p-3 rounded-md bg-neutral-950 text-white outline-none">
+      <select className="p-3 rounded-md bg-blue-50  dark:bg-neutral-950 text-gray-700 ">
         <option>1 Person</option>
         <option>2 Person</option>
         <option>3 Person</option>
@@ -201,9 +271,9 @@ export default function Home() {
       </select>
       <input
         type="date"
-        className="p-3 rounded-md bg-neutral-950 text-white outline-none"
+        className="p-3 rounded-md bg-blue-50 dark:bg-neutral-950 text-gray-700 "
       />
-      <select className="p-3 rounded-md bg-neutral-950 text-white outline-none">
+      <select className="p-3 rounded-md bg-blue-50 dark:bg-neutral-950 text-gray-700 ">
         <option>10:00 AM</option>
         <option>11:00 AM</option>
         <option>12:00 PM</option>
@@ -211,7 +281,7 @@ export default function Home() {
         <option>2:00 PM</option>
       </select>
 
-      <button className="bg-yellow-800 py-3 rounded-md font-semibold">
+      <button className="bg-yellow-800 py-3 text-white rounded-md font-semibold">
         Book A Table
       </button>
     </div>
@@ -238,7 +308,7 @@ export default function Home() {
     
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
       
-      <div className="relative bg-gray-800 rounded-xl overflow-hidden w-full">
+      <div className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden w-full">
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F28.jpg&w=1920&q=75"
           alt="Hot Chocolate"
@@ -251,7 +321,7 @@ export default function Home() {
       </div>
 
     
-      <div className="relative bg-gray-800 rounded-xl overflow-hidden w-full">
+      <div className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden w-full">
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F25.jpg&w=1920&q=75"
           alt="Chicken Alfredo"
@@ -264,7 +334,7 @@ export default function Home() {
       </div>
 
       
-      <div className="relative bg-gray-800 rounded-xl overflow-hidden w-full">
+      <div className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden w-full">
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F26.jpg&w=1920&q=75"
           alt="Cheesecakes"
@@ -281,14 +351,14 @@ export default function Home() {
 </div>
 
 
-<div className="bg-black text-white py-16">
+  <div className="bg-white dark:bg-black text-black dark:text-white py-16">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <div className="grid md:grid-cols-3 gap-10 divide-x divide-gray-600">
+          <div className="grid md:grid-cols-3 gap-10 divide-x divide-gray-200 dark:divide-gray-600">
             <div className="px-6">
               <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F13.png&w=640&q=75"
                alt="Quality Foods" className="w-24 h-24 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Quality Foods</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                 We source locally when we can and cook everything from scratch.
               </p>
             </div>
@@ -297,7 +367,7 @@ export default function Home() {
               <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F14.png&w=640&q=75" 
               alt="Fast Delivery" className="w-24 h-24 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                 Hot food delivered fast - usually within 30 minutes.
               </p>
             </div>
@@ -306,7 +376,7 @@ export default function Home() {
               <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F15.png&w=640&q=75"
                alt="recipes" className="w-24 h-24 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Delicious Recipes</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                 Family recipes we have been perfecting for decades.
               </p>
             </div>
@@ -334,7 +404,7 @@ export default function Home() {
       />
 
      
-      <div className="absolute top-6 -right-10 bg-white w-28 h-28 rounded-full flex flex-col items-center justify-center text-black font-bold shadow-lg">
+      <div className="absolute top-6 -right-10 bg-white w-28 h-28 rounded-full flex flex-col items-center justify-center text-black font-bold ">
         <span className="text-sm">Save</span>
         <span className="text-3xl">55%</span>
       </div>
@@ -364,13 +434,13 @@ export default function Home() {
   </div>
 </div>
 
-      <div className="bg-black dark:bg-black text-white dark:text-gray-100">
+      <div className="bg-white dark:bg-black text-black dark:text-gray-100">
         <section className="py-20 px-6 md:px-20">
           <div className="text-center mb-10">
             <p className="text-yellow-400 uppercase tracking-widest text-sm mb-2">
               Food Menu
             </p>
-            <h2 className="text-4xl font-bold mb-6">Our Specials Menu</h2>
+            <h2 className="heading text-4xl font-bold mb-6">Our Specials Menu</h2>
             <div className="border-2 border-white rounded-lg p-2 max-w-2xl mx-auto">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                 {foodCategories.map((category, idx) => {
@@ -378,7 +448,7 @@ export default function Home() {
                   if (idx === 0) {
                     buttonStyle += "bg-yellow-700 text-white";
                   } else {
-                    buttonStyle += "bg-black text-white";
+                    buttonStyle += "bg-white text-black dark:bg-black dark:text-white";
                   }
                   return (
                     <button key={category} className={buttonStyle}>
@@ -393,14 +463,33 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
             {dishes.map((dish, i) => {
               return (
-                <div key={i} className="bg-white dark:bg-neutral-900 shadow-lg rounded-xl overflow-hidden">
-                  <img src={dish.img} alt={dish.name} className="w-full h-56 object-cover" />
+                <div key={i} className="bg-white dark:bg-neutral-900 shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition-shadow">
+                 
+                  <div className="relative">
+                    <img src={dish.img} alt={dish.name} className="w-full h-56 object-cover" />
+                  </div>
+                  
+            
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 text-black dark:text-white">{dish.name}</h3>
-                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">{dish.desc}</p>
-                    <p className="text-yellow-700 font-bold text-lg mb-3">{dish.price}</p>
-                    <button className="bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700">
-                      Add to Cart
+                   
+                    <div className="flex justify-between items-center mb-3">
+                      <div className="flex items-center gap-1">
+                        <span className="text-yellow-500 font-bold">★ {dish.rating}</span>
+                        <span className="text-gray-500 text-sm">({dish.reviews})</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-gray-400 line-through text-sm">{dish.originalPrice}</span>
+                        <span className="text-black dark:text-white font-bold text-lg">{dish.price}</span>
+                      </div>
+                    </div>
+           
+                    <h3 className="text-lg font-semibold mb-2 text-black dark:text-white">{dish.name}</h3>
+                    
+                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">{dish.desc}</p>
+                    
+                 
+                    <button className="w-full border-2 border-gray-900 dark:border-white text-gray-900 dark:text-white px-4 py-3 rounded-full hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900 transition font-semibold">
+                      🛒 Add to Cart
                     </button>
                   </div>
                 </div>
@@ -445,64 +534,12 @@ export default function Home() {
       </div>
 <OpeningHours />
 
+<div className="text-center mt-10 mb-8 sm:mb-14">
+        <h1 className="text-[#c7a46b] dark:text-amber-500 font-semibold tracking-wide mb-2 text-sm sm:text-base">MASTER CHEFS</h1>
+        <h2 className="heading text-2xl dark:text-amber-50 text-[#17120b] sm:text-3xl md:text-4xl lg:text-5xl font-bold">Meet Our Special Chefs</h2>
+      </div>
+<Chefs />
 
-<div className="bg-[#111111] dark:bg-black text-white dark:text-gray-100 py-10 sm:py-20 px-4 sm:px-6 lg:px-16">
- 
-  <div className="text-center mb-8 sm:mb-14">
-    <p className="text-[#c7a46b] font-semibold tracking-wide mb-2 text-sm sm:text-base">MASTER CHEFS</p>
-    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Meet Our Special Chefs</h2>
-  </div>
-
-  
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 justify-items-center">
-    
-   
-    <div className="relative flex flex-col items-center">
-      <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-2 sm:border-4 border-[#c7a46b] overflow-hidden hover:bg-gray-800 transition">
-        <img
-          src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=400&fit=crop&crop=face"
-          alt="Chef 1"
-          className="object-cover w-full h-full hover:opacity-80 transition"
-        />
-      </div>
-      
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-[#c7a46b] py-2 sm:py-3 px-4 sm:px-6 rounded-lg w-40 sm:w-48 md:w-52 text-center shadow-lg">
-        <h3 className="text-base sm:text-lg font-semibold">Alexander Petllo</h3>
-        <p className="text-xs sm:text-sm text-white/90">Assistant Chef</p>
-      </div>
-    </div>
-
-    
-    <div className="relative flex flex-col items-center">
-      <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-2 sm:border-4 border-[#c7a46b] overflow-hidden hover:bg-gray-800 transition">
-        <img
-          src="https://th.bing.com/th/id/OIP.7O06zAQd6DwjeKoSwknwbAAAAA?w=147&h=108&c=7&bgcl=bf00c6&r=0&o=6&cb=ucfimg1&dpr=1.5&pid=13.1&ucfimg=1"
-          alt="Chef 2"
-          className="object-cover w-full h-full hover:opacity-80 transition"
-        />
-      </div>
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-[#c7a46b] py-2 sm:py-3 px-4 sm:px-6 rounded-lg w-40 sm:w-48 md:w-52 text-center shadow-lg">
-        <h3 className="text-base sm:text-lg font-semibold">Mendia Juxef</h3>
-        <p className="text-xs sm:text-sm text-white/90">Burger King</p>
-      </div>
-    </div>
-
-   
-    <div className="relative flex flex-col items-center">
-      <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-2 sm:border-4 border-[#c7a46b] overflow-hidden hover:bg-gray-800 transition">
-        <img
-          src="https://th.bing.com/th/id/OIP.fadjg0SE4tTVXyNTIPhsmAHaE8?w=150&h=108&c=7&bgcl=a36774&r=0&o=6&cb=ucfimg1&dpr=1.5&pid=13.1&ucfimg=1"
-          alt="Chef 3"
-          className="object-cover w-full h-full hover:opacity-80 transition"
-        />
-      </div>
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-[#c7a46b] py-2 sm:py-3 px-4 sm:px-6 rounded-lg w-40 sm:w-48 md:w-52 text-center shadow-lg">
-        <h3 className="text-base sm:text-lg font-semibold">Petro William</h3>
-        <p className="text-xs sm:text-sm text-white/90">Main Chef</p>
-      </div>
-    </div>
-  </div>
-</div>
 
       <div className="py-20 px-6 text-center bg-white dark:bg-black text-black dark:text-white">
         <div className="mb-10">

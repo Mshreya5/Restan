@@ -2,78 +2,74 @@
 
 export default function OpeningHours() {
   return (
-    <section className="bg-white dark:bg-black py-8 sm:py-16 px-4 sm:px-6 lg:px-20 flex flex-col lg:flex-row items-center justify-between gap-8">
+    <section className="relative bg-white dark:bg-black py-20 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8">
       
-     
-      <div className="flex-1 flex justify-center">
-        <img
-          src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?cs=srgb&dl=spoon-dark-sugar-1028714.jpg&fm=jpg"
-          alt="Opening Hours"
-          className="w-64 sm:w-80 lg:w-auto h-auto max-w-full"
-        />
+      <div className="absolute left-8 top-8">
+        <h2 className="text-3xl sm:text-3xl md:text-7xl mb-2 font-light text-gray-200 dark:text-white opacity-50">
+          RESTAN
+        </h2>
       </div>
 
-      
-      <div className="flex-1 w-full">
-        <article className="bg-white dark:bg-neutral-900 shadow-lg rounded-xl p-6 sm:p-8">
+      <div className="max-w-7xl mx-auto relative">
+        <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
           
-        
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Opening Hours
-          </h2>
-          
-          
-          <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-            Drop by for some good food and drinks in a relaxed setting. We have got live music most evenings and we are right downtown.
-          </p>
+          <div className="w-1/2 ml-20 mt-60 h-[450px] md:h-[550px] lg:h-[400px] rounded-2xl overflow-hidden">
+            <iframe
+  src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk&controls=0&modestbranding=1"
+  className="w-full h-full rounded-xl"
+  title="YouTube player"
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+></iframe>
 
-          
-          <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
-            
-            <div className="flex justify-between text-gray-800 dark:text-gray-200 text-sm sm:text-base">
-              <span className="font-semibold">Sunday To Tuesday:</span>
-              <span className="border-b border-gray-300 dark:border-gray-600 flex-1 mx-2 sm:mx-4" aria-hidden="true"></span>
-              <span className="font-medium">10:00 AM - 09:00 PM</span>
-            </div>
-            
-            <div className="flex justify-between text-gray-800 dark:text-gray-200 text-sm sm:text-base">
-              <span className="font-semibold">Wednesday To Thursday:</span>
-              <span className="border-b border-gray-300 dark:border-gray-600 flex-1 mx-2 sm:mx-4" aria-hidden="true"></span>
-              <span className="font-medium">11:30 AM - 10:30 PM</span>
-            </div>
-            
-            <div className="flex justify-between text-gray-800 dark:text-gray-200 text-sm sm:text-base">
-              <span className="font-semibold">Friday & Saturday:</span>
-              <span className="border-b border-gray-300 dark:border-gray-600 flex-1 mx-2 sm:mx-4" aria-hidden="true"></span>
-              <span className="font-medium">10:30 AM - 12:00 AM</span>
-            </div>
           </div>
 
-          
-          <div className="flex items-center space-x-3 sm:space-x-4">
-            
-            <div className="bg-[#c7a46b] p-3 sm:p-4 rounded-full flex-shrink-0" aria-hidden="true">
+          <div className="w-full lg:w-1/2 lg:-ml-20 lg:mt-8">
+            <div className="bg-white dark:bg-neutral-900 shadow-2xl rounded-xl p-8 mt-30 sm:p-10 relative">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Opening Hours</h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-8 text-sm leading-relaxed">
+                A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-semibold text-gray-900 dark:text-gray-100">Sunday To Tuesday:</span>
+                  <span className="mx-3 flex-1 border-b border-dotted border-gray-300 dark:border-gray-600"></span>
+                  <span className="font-medium text-gray-700 dark:text-gray-300">10:00 - 09:00</span>
+                </div>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-semibold text-gray-900 dark:text-gray-100">Wednesday To Thursday:</span>
+                  <span className="mx-3 flex-1 border-b border-dotted border-gray-300 dark:border-gray-600"></span>
+                  <span className="font-medium text-gray-700 dark:text-gray-300">11:30 - 10:30</span>
+                </div>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-semibold text-gray-900 dark:text-gray-100">Friday & Saturday:</span>
+                  <span className="mx-3 flex-1 border-b border-dotted border-gray-300 dark:border-gray-600"></span>
+                  <span className="font-medium text-gray-700 dark:text-gray-300">10:30 - 12:00</span>
+                </div>
+              </div>
+             
+              <button 
+                className="bg-yellow-600 px-3 py-1 rounded-full "
+              >
+                <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F6.png&w=128&q=75"/>
+              </button>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Call Anytime</p>
+                  <a href="tel:+964733378901" className="text-lg font-bold text-gray-900 dark:text-white hover:text-[#8b7355]">
+                    +964733-378901
+                  </a>
+                </div>
+              </div>
+              
               <img 
-                src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F6.png&w=128&q=75" 
-                alt="Phone icon" 
-                className="w-5 h-5 sm:w-6 sm:h-6" 
+                src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F4.png&w=3840&q=75" 
+                alt="Utensils decoration" 
+                className="absolute -right-8 -bottom-8 w-64 opacity-20 pointer-events-none" 
               />
             </div>
-            
-            
-            <div>
-              <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
-                Call Anytime
-              </p>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">
-                <a href="tel:+964733378901" className="hover:text-[#c7a46b] transition-colors">
-                  +964 733-378901
-                </a>
-              </h3>
-            </div>
           </div>
-        </article>
-      </div>
+        
+     
     </section>
   );
 }

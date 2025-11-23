@@ -45,7 +45,7 @@ export default function Header() {
           <div className="cursor-pointer hover:text-[#a57b46]" onClick={() => router.push('/')}>
             Home▾
           </div>
-          <div className="cursor-pointer hover:text-[#a57b46]">
+          <div className="cursor-pointer hover:text-[#a57b46] relative group">
             Pages▾
           </div>
           <div className="cursor-pointer hover:text-[#a57b46]" onClick={() => router.push('/menu')}>

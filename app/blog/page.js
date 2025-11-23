@@ -114,7 +114,7 @@ export default function BlogStandard() {
             2
           </button>
           <button className="w-10 h-10 border border-gray-300 rounded-md bg-white text-black font-bold ">
-          </button>
+          3</button>
           <button className="w-10 h-10 border border-gray-300 rounded-md bg-white text-black font-bold ">
             4
           </button>

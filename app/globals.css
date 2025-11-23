@@ -1,9 +1,15 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap');
 
 
 :root {
   --background: #ffffff; 
   --foreground: #171717;  
+}
+
+:root {
+  --font-heading: 'Playfair Display', serif;
+  --font-sans: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 
@@ -26,7 +32,16 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+.heading {
+  font-family: var(--font-heading);
+}
+
+/* Prevent horizontal scrolling caused by absolute positioning on small screens */
+html, body {
+  overflow-x: hidden;
 }
 
 
