@@ -95,7 +95,7 @@ export default function Home() {
           <div className="hidden lg:flex gap-30 xl:gap-20 text-base lg:text-lg">
             <div className="relative group cursor-pointer">
   Home▾
-  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible">
     <div className="py-2">
 
       <div
@@ -232,11 +232,11 @@ export default function Home() {
             "url('https://www.foodchow.com/_next/image?url=%2Fforwhom%2Fbnr-img.jpg&w=3840&q=75')",
         }}
       >
-        <div className="bg-black/50 absolute inset-0"></div>
+        <div className="absolute inset-0"></div>
         <div className="relative z-10">
           <h1 className="heading text-4xl sm:text-6xl md:text-7xl font-bold mb-8">Best Restaurant</h1>
           <div className="flex justify-center">
-            <div className="w-32 h-32 sm:w-40 sm:h-40 border-4 border-yellow-300 rounded-full flex items-center justify-center text-white font-semibold text-sm sm:text-base tracking-wider">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 border-4 border-yellow-300 rounded-full flex items-center justify-center text-white font-semibold text-sm sm:text-base">
               BEST FOOD SINCE 1865
             </div>
           </div>

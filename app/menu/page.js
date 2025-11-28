@@ -89,7 +89,7 @@ export default function MenuPage() {
             "url('https://www.shutterstock.com/image-photo/japanese-seafood-sushi-on-black-260nw-412326955.jpg')",
         }}
       >
-        <h1 className="heading text-4xl font-bold mb-3">Food Menu</h1>
+        <h1 className="heading text-5xl font-bold mb-3">Food Menu</h1>
         <p className="text-sm">⌂ Home › Menu</p>
       </div>
 

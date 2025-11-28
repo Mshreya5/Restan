@@ -43,8 +43,8 @@ export default function Shop() {
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
         <div className="relative z-10">
-          <h1 className="text-4xl font-bold mb-2">Special Food</h1>
-          <p className="text-lg">⌂ Home › Shop</p>
+          <h1 className="heading text-5xl font-bold mb-3">Special Food</h1>
+          <p className="text-sm">⌂ Home › Shop</p>
         </div>
       </header>
 

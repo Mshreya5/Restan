@@ -15,7 +15,7 @@ export default function BlogStandard() {
 
      
       <header className="text-center py-[150px] px-5 bg-[url('https://www.shutterstock.com/image-photo/japanese-seafood-sushi-on-black-260nw-412326955.jpg')] bg-cover bg-center text-white">
-        <h1 className="text-4xl font-bold mb-3">Blog Standard</h1>
+        <h1 className="heading text-5xl font-bold mb-3">Blog Standard</h1>
         <p className="text-sm">⌂ Home › blog-standard</p>
       </header>
 

@@ -4,10 +4,10 @@ export default function OpeningHours() {
   return (
     <section className="relative bg-white dark:bg-black py-20 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8">
       
-      <div className="absolute left-8 top-8">
-        <h2 className="text-3xl sm:text-3xl md:text-7xl mb-2 font-light text-gray-200 dark:text-white opacity-50">
+      <div className="absolute left-50 top-80">
+        <h1 className="text-7xl sm:text-3xl md:text-7xl  font-light text-gray-200 dark:text-white opacity-50">
           RESTAN
-        </h2>
+        </h1>
       </div>
 
       <div className="max-w-7xl mx-auto relative">

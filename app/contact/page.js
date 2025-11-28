@@ -21,7 +21,7 @@ export default function ContactPage() {
 
         
         <div className="relative z-10">
-          <h1 className="text-4xl font-bold mb-3">Contact Us</h1>
+          <h1 className="heading text-5xl font-bold mb-3">Contact Us</h1>
           <p className="text-sm">⌂ Home › Contact</p>
         </div>
       </header>
