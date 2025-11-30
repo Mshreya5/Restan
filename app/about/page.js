@@ -23,13 +23,35 @@ export default function AboutPage() {
       <section className="bg-yellow-50 py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-amber-900 font-serif text-2xl text-center mb-12">OUR TRUSTED 8K HAPPY PARTNER</h2>
-          <div className="flex flex-row gap-8 justify-center items-center">
-            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F3.png&w=1080&q=75" alt="Partner 1" className="w-48 h-auto"/>
-            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F4.png&w=1080&q=75" alt="Partner 2" className="w-48 h-auto"/>
-            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F5.png&w=1080&q=75" alt="Partner 3" className="w-48 h-auto"/>
-            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F1.png&w=1080&q=75" alt="Partner 4" className="w-48 h-auto"/>
-            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F2.png&w=1080&q=75" alt="Partner 5" className="w-48 h-auto"/>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row lg:justify-center lg:items-center gap-6">
+  <img
+    src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F3.png&w=1080&q=75"
+    alt="Partner 1"
+    className="w-40 md:w-44 lg:w-48 h-auto mx-auto"
+  />
+  <img
+    src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F4.png&w=1080&q=75"
+    alt="Partner 2"
+    className="w-40 md:w-44 lg:w-48 h-auto mx-auto"
+  />
+  <img
+    src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F5.png&w=1080&q=75"
+    alt="Partner 3"
+    className="w-40 md:w-44 lg:w-48 h-auto mx-auto"
+  />
+  <img
+    src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F1.png&w=1080&q=75"
+    alt="Partner 4"
+    className="w-40 md:w-44 lg:w-48 h-auto mx-auto"
+  />
+  <img
+    src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F2.png&w=1080&q=75"
+    alt="Partner 5"
+    className="w-40 md:w-44 lg:w-48 h-auto mx-auto"
+  />
+</div>
+
+
         </div>
       </section>
         

@@ -2,27 +2,27 @@
 
 export default function OpeningHours() {
   return (
-    <section className="relative bg-white dark:bg-black py-20 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-white dark:bg-black px-4 sm:px-6 lg:px-8">
       
-      <div className="absolute left-50 top-80">
-        <h1 className="text-7xl sm:text-3xl md:text-7xl  font-light text-gray-200 dark:text-white opacity-50">
-          RESTAN
-        </h1>
+      <div className="absolute left-50 top-30">
+        <h1 className="hidden md:block text-7xl lg:text-8xl font-light text-gray-200 dark:text-white opacity-50">
+  RESTAN
+</h1>
       </div>
-
       <div className="max-w-7xl mx-auto relative">
-        <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
+        <div className="flex flex-col lg:flex-row gap-2 items-center lg:items-start">
           
-          <div className="w-1/2 ml-20 mt-60 h-[450px] md:h-[550px] lg:h-[400px] rounded-2xl overflow-hidden">
-            <iframe
-  src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk&controls=0&modestbranding=1"
-  className="w-full h-full rounded-xl"
-  title="YouTube player"
-  allow="autoplay; encrypted-media"
-  allowFullScreen
-></iframe>
+          <div
+  className="w-full md:w-1/2  ml-0 md:ml-20 mt-10 md:mt-60  h-[220px] sm:h-[260px] md:h-[550px] lg:h-[400px] rounded-2xl overflow-hidden ">
+  <iframe
+    src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk&controls=0&modestbranding=1"
+    className="w-full h-full rounded-xl"
+    title="YouTube player"
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+  ></iframe>
+</div>
 
-          </div>
 
           <div className="w-full lg:w-1/2 lg:-ml-20 lg:mt-8">
             <div className="bg-white dark:bg-neutral-900 shadow-2xl rounded-xl p-8 mt-30 sm:p-10 relative">

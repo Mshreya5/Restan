@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Restaurant Website",
+  title: "Create Next App",
   description:
     "Good food, fair prices, friendly service. Family restaurant in downtown serving comfort food since '85.",
 };
