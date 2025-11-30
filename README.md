@@ -23,6 +23,14 @@ The site includes sections like Home, Menu, About, Chefs, Blog, Shop, and Contac
 * Fast loading (Vercel)
 * Reusable components (Header, Footer, Chefs, Opening Hours)
 
+## 🌟 Features
+
+- *Home Page*: Hero section with restaurant branding and navigation
+- *Menu Page*: Display of food items with categories and pricing
+- *Contact Page*: Contact form and restaurant information
+- *Blog Page*: Latest news and articles about the restaurant
+- *Shop Page*: Food items available for purchase
+
 
 ## 🛠️ Tech Stack
 
